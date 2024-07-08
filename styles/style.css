@@ -1,0 +1,545 @@
+* {
+  font-size: 1em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: #2d2d2f;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h2 .itemBlock a,
+h2 .itemBlock a img {
+  color: #2d2d2f;
+}
+
+h2 .itemBlock a {
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+main a {
+  border-bottom: 1px solid #853232;
+}
+
+.gridContainer {
+  height: 100%;
+  display: block;
+  /* display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar mainContent"
+    "sidebar mainContent";
+  grid-template-columns: 450px auto;
+  grid-template-rows: 160px auto 50px; */
+}
+
+.headWrapper {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+header {
+  /* grid-area: header; */
+  background: linear-gradient(#c99 30%, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerItem {
+  width: 100%;
+  text-align: center;
+}
+
+.master-sporta-wrapper {
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px #fff, -4px -4px 15px #fff;
+  /* box-shadow: 4px 4px 15px #c66, -4px -4px 15px #c66; */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.master-sporta img {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  border-radius: 8px;
+  /* box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
+}
+
+.master-sporta {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadBtn {
+  color: #c33;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+aside {
+  /* grid-area: sidebar; */
+  background-color: #666;
+  text-align: center;
+  box-shadow: 2px 2px 10px #2d2d2f;
+  position: relative;
+
+}
+
+aside .myPhotoContainer {
+  width: 180px;
+  box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
+  border-radius: 100px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+aside img.myPhoto {
+  width: 180px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+main {
+  /* grid-area: mainContent; */
+  background-color: #fff;
+}
+
+.titlesWrapperInner {
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.titlesWrapper {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5px;
+  box-shadow: 1px 1px 8px #fff, -1px -1px 8px #fff;
+  border-radius: 100px;
+  padding: 2px;
+}
+
+.itemBlockWrapper {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.itemBlockContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skils {
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.skils .itemBlock {
+  width: 150px;
+  text-align: left;
+  margin: 0;
+}
+
+.itemBlockContainer .itemBlockWrapper {
+  width: fit-content;
+}
+
+.itemBlockContainer .itemBlockWrapper .itemBlock {
+  width: fit-content;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.itemBlock {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+.itemBlock img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.itemBlock a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.skillLevel {
+  width: 100%;
+  height: 10px;
+  margin: 5px 0 10px 0;
+}
+
+.SCADALevel {
+  background: linear-gradient(90deg, #c33 85%, white 85%);
+}
+
+.EthernetLevel {
+  background: linear-gradient(90deg, #c33 65%, white 65%);
+}
+
+.SEPAMLevel {
+  background: linear-gradient(90deg, #c33 75%, white 75%);
+}
+
+.skillsHeader {
+  font-size: 1.5em;
+  text-decoration: underline #c33;
+  margin-bottom: 10px;
+}
+
+.itemBlock li {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.itemBlock li:before {
+  display: inline-block;
+  content: "- ";
+  color: #fff;
+  vertical-align: baseline;
+  font-size: 1.2em;
+}
+
+.mainTitlesWrapper {
+  width: fit-content;
+  padding: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  color: #c33;
+  font-size: 1.5em;
+  text-overflow: ellipsis;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px #52525750, -4px -4px 10px #52525750;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.mainItemBlock {
+  text-overflow: ellipsis;
+  border-top: 2px solid #c33;
+  margin-right: 20px;
+}
+
+.mainItemBlock li {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #2d2d2f;
+  font-weight: bolder;
+}
+
+.mainItemBlock li:before {
+  display: inline-block;
+  content: "- ";
+  color: #c33;
+  font-size: 1.5em;
+  vertical-align: baseline;
+}
+
+.mainItemBlockWrapper {
+  margin-bottom: 10px;
+}
+
+a {
+  text-shadow: 0 0 1px #fff;
+  color: #2d2d2f;
+}
+
+.important-info {
+  color: #c33;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.education-block a {
+  color: #c33;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.date {
+  color: #2d2d2f;
+}
+
+.post {
+  color: #2d2d2f;
+}
+
+.contacts-block {
+  display: flex;
+}
+
+.contacts-block .itemBlockWrapper:nth-child(1) {
+  width: 60%;
+}
+
+.contacts-block .itemBlockWrapper:nth-child(2) {
+  width: 40%;
+}
+
+.contacts-block .mail-block {
+  width: 100%;
+  left: -4%;
+  position: relative;
+}
+
+.education-block {
+  display: flex;
+}
+
+.content-block {
+  /* box-shadow: 4px 4px 10px #52525750, -4px -4px 10px #52525750; */
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.description {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.mainItemWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainItemWrapper .mainItemBlock {
+  padding: 10px;
+}
+
+.mainItemImgWrapper {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.mainItemImgWrapper img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 4px 4px 10px #52525750, -4px -4px 10px #52525750;
+  border-radius: 8px;
+  padding: 5px;
+  object-fit: contain;
+  transition: .3s;
+  margin-right: 10px;
+}
+
+.mainItemImg:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #c33, -2px -2px 10px #c33;
+}
+
+.mainItemImg {
+  transition: .3s;
+}
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #2d2d2f80;
+  z-index: 2;
+  transition: .3s;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.hideModalContainer {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modalContainer button {
+  position: absolute;
+  right: 0;
+  margin: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff;
+}
+
+.modalImgContainer img {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 2px 2px 10px #666, -2px -2px 10px #666;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.modalImgContainer {
+  width: fit-content;
+}
+
+@media (max-width: 1100px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-block {
+    flex-direction: column;
+  }
+
+  .downloadBtn {
+    font-size: 18px;
+  }
+
+  .master-sporta img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .skils {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+  }
+
+  .skils .itemBlock {
+    display: inline-block;
+
+  }
+
+  .mainItemWrapper {
+    display: block;
+  }
+}
+
+
+
+.master-sporta-wrapper img {
+  transition: .3s;
+}
+
+.loader {
+  opacity: 0;
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #c33;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: .3s;
+}
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: .8em;
+  }
+
+  .master-sporta img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .itemBlock a img {
+    display: none;
+  }
+
+  .itemBlock a span {
+    font-size: .6em;
+  }
+}

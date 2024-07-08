@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About me</title>
+  <link rel="icon" href="./icon/resume.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  </link>
+
+  <!-- <link rel="preload" href="./photo/my_photo_resume.png" as="image" type="image/png" /> -->
+  <script defer src="./scripts/script.js"></script>
+
+</head>
+
+<body>
+  <div class="modalContainer hideModalContainer">
+    <button class="closeBtn"><img src="./img/close.png" /></button>
+    <div class="modalImgContainer"><img src="./img/master-sporta.png" /></div>
+    <div class="mask"></div>
+  </div>
+
+  <div class="gridContainer">
+    <header>
+      <div class="master-sporta headerItem">
+        <div class="master-sporta-wrapper">
+          <img class="myPhoto" src="./photo/my_photo_resume.png" alt="My photo">
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="headWrapper headerItem">
+        <div>
+          <h1>Мальков Александр</h1>
+          <h2>
+            <div class="itemBlock" title="https://t.me/Malkov_Alexander">
+              <a target="_blank" href="https://t.me/Malkov_Alexander">
+                <img src="./img/telegram.png" alt="Telegram">
+                <span>@Malkov_Alexander</span>
+              </a>
+            </div>
+          </h2>
+        </div>
+      </div>
+      <div class="download headerItem">
+        <a class="downloadBtn" download="" href="./docs/about-me.pdf">Скачать PDF</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Frontend-разработка</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Перевёл приложение с десятками тысяч пользователей с Next версии 12 на
+                Next 13 и npm версии 6 на npm 8, в то время когда появилась проверка одноранговых зависимостей
+                у Node не используя --legacy-peer-deps или --force
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/energotronika.png" alt="screen">
+                <img class="mainItemImg" src="./img/energotronika_2.png" alt="screen">
+                <img class="mainItemImg" src="./img/energotronika.jpg" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Пофиксил Socket error 101, вызванный устареванием корневого сертификатов Let’s Encrypt
+                (переход сертификатов DST Root CA X3 на ISRG Root X1) при этом внешний адрес работал по https, а с
+                пробросом портов
+                1C-Bitrix не мог подключиться сам к себе по защищенному каналу. Проблема решилась из консоли
+                Centos командами для обновления корневых сертификатов
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/vsekomponenti.png" alt="screen">
+                <img class="mainItemImg" src="./img/vsekomponenti_2.png" alt="screen">
+                <img class="mainItemImg" src="./img/vsekomponenti_3.png" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Прикрутил Webvisor к проекту на data-styled технологиях (Emotion, Styled-Components)
+                с этой проблемой сталкиваются миллионы разработчиков в РФ и странах ближнего зарубежья.
+                В личном кабинете Yandex Metrika написанно, что на сегодняшний день это реализовать невозможно
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/webvisor.png" alt="screen">
+                <img class="mainItemImg" src="./img/webvisor_2.jpg" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                На многомиллионном проекте восстановил работу SWC компилятора. Был включен Terser из-за настроек
+                Babel. Перенастроил next.config, пересобрал Docker образ, настроил pipeline в CI-CD (Gitlab)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/tek_2.png" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Поднял кратно баллы производительности и характеристики SEO - Core Web Vitals по PageSpeed Insights и
+                  Google Search Console. Приложение на Next 12, Node 16
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/tek-41.png" alt="screen">
+                  <img class="mainItemImg" src="./img/tek-94.png" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Реализовал таблицу с Infinite scroll на React для сотен тысяч точек учета энергии, под Asp.NET
+                  (C#) технологии, а также подгрузку данных с датчиков в реальном времени SignalR
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/mainTable.png" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Создал PWA приложения, как для Next так и для нативных технологий с использованием API
+                  центробанка, либо собственных API на PHP. Устанавливал кастомные кнопки скачивания приложений
+                  для Android и IOS, настраивал избирательное кэширование данных
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/pwa.png" loading="lazy" alt="screen">
+                  <img class="mainItemImg" src="./img/pwa_2.png" loading="lazy" alt="screen">
+                  <img class="mainItemImg" src="./img/pwa_3.png" loading="lazy" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Использовал в приложениях Google Maps и Open weather для формирования отчетов и получения
+                  показателей по геолокации под React-pdf и Stimulsoft. Формирование графиков на Ant-design
+                  и Amcharts с полученными данными
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/report.png" loading="lazy" alt="screen">
+                  <img class="mainItemImg" src="./img/charts.png" loading="lazy" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Реализовал проект с дополненной реальностью (на странице приложения во фрейме подтверждается
+                  доступ к камере и по наведению камеры на календарь, картинка оживает, появляется
+                  трехмерная модель с анимацией. WebXAR)
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/robot_xar.png" loading="lazy" alt="screen">
+                  <img class="mainItemImg" src="./img/snail_xar.png" loading="lazy" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Обучал нейросеть на JavaScript - Brain для распознавания символов, с графическим интерфейсом на Canvas
+                </span>
+                <div class="mainItemImgWrapper">
+                  <img class="mainItemImg" src="./img/neural.png" loading="lazy" alt="screen">
+                </div>
+              </li>
+            </div>
+          </div>
+
+          <div class="mainItemBlockWrapper">
+            <div class="mainItemBlock">
+              <li>
+                <span class="description">
+                  Помогал успешно реализовывать задачи младшим сотрудникам в команде (подключались по миту, или
+                  телемосту,
+                  расшаривали экран и решали задачи которые вызывают затруднение)
+                </span>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Backend-разработка</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Создал API на PHP для своего сайта-портфолио с MySQL, работа в PhpMyAdmin
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/portfolio_2.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Взаимодействовал с бэком на C#, корректировал запросы, дебажил в Visual studio
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/vs.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Писал серверную часть на C++ для проекта со светодиодной матрицей (поднял сервер, написал API)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/arduino.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Фиксил проблему при интеграции с 1C на PHP и MySQL. Названия даташитов прилетали не по
+                номенклатуре в любом режиме, взял название из другого поля
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/mysql.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Графика (2d/3d)</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Реализовал приложение для измерения трехмерных объектов на выходе из 3D
+                принтера в браузере с использованием Three.js (WebGL) в трёх проекциях
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/gear.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/gear_2.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/gear_3.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Выполнил приложение для заказчика из медицинской сферы (ортодонтия)
+                На канвасе в 2D можно отобразить сканы челюсти и добавить изменяемые контуры для очертания зубов и
+                костей. До этого приходилось рисовать руками
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/bone.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/bone_2.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/bone_3.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Создал проект для создания схемы электрификации помещения с несколькими этажами и скачиванием сметы по
+                результатам подсчетов в формате word (.docx)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/plan.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/plan_2.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/plan_3.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Реализовал конфигуратор 3D модели с возможностью соединять, разделять, оставлять пересечение,
+                как в Blender только на Three.js c CSG
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/conf.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/conf_2.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/conf_3.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Добавлял трехмерные модели на сцену в приложения на Vue или Flatter, с панорамными изображениями
+                с прогресс барами и сжатием Drako, а также шейдерные материалы и геометрия на GLSL (WebGL) и
+                интерактивным взаимодействием с пользователем
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/football.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/pepsi.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/cyborg.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Встраиваемые системы (IoT)</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Создал проект схожий с Blynk на веб технологиях, но абсолютно бесплатно. Основная идея преобразовать
+                информационный сигнал в физический. На ESP8266 был поднят сервер и написано API (С++/Wiring, Assembler)
+                для получения запросов и преобразования данных. На фронте реализован пользовательский графический
+                интерфейс, где можно было менять параметры и обращатся по эндпоинтам к API передавая данные. К
+                устройству обращаться можно из любой точки, так как настроен проброс портов, DHCP, подключение к
+                обычному роутеру
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/running_line.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Реализовал дополнительное оборудование на микроконтроллере архитектуры AVR - Atmega8 для преобразователя
+                частоты (Mitsubishi electric) переменного тока под трехфазный асинхронный двигатель с короткозамкнутым
+                ротором. Оборудование экономило человеческие ресурсы производства, выполняла запуск и остановку
+                вибровозбудителя в зависимости от настроек, с панели устройства
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/atmega.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/radio.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Выполнил управление осветительным прибором через интернет из любой точки по одному каналу управления.
+
+                Рабочий процесс:
+
+                Описание процедуры выполнения задач в Atmel Studio на С. Генерация hex файла для прошивки
+                микроконтроллера. В программе AVR-OSP II выбор необходимый параметров и подключение чипа к USBasp. После
+                завершения прошивки пайка схемы соединяющую силовую часть и контрольную. Гальваническая развязка на фото
+                симисторах или транзисторных ключах в исключительных случаях реле. Монтаж оборудования, наладка, ввод в
+                эксплуатацию
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/wi-fi.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                В проектах по электромонтажу использовал, светодиоды с пиксельной адресацией WS2812 со стабилизированным
+                питанием. Прошивку выполнял в среде Arduino
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/ring.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/ws2812.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/ws2812.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт медецинского оборудования массажный стол (диагностика схемы, пайка контактов, замена шлейфа)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/med-device.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Радиоэлектроника</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Пайка соединительных разъемов на гидравлической маслостанции (металлургического оборудование
+                сталеплавильного комплекса)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/socket-oil.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт шахтовых датчиков (пайка схем, замена светодиодов, резисторов, …)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/massa.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Сборка схемы Программатор Громова (можно использовать вместо USBasp для прошивки
+                микроконтроллеров AVR)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/prog.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт детского электромобиля (диагностика, замена замка зажигания, пайка контактов на схеме управления)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/car.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/car_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/car_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт магнитофона Sony (замена усилителя звука на плате)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/sound.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/sound_2.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Доработка приточно вытяжной системы, интеграция таймера отключения с регулировкой времени
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/evraz.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/arduino.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт шлагбаума на посту ахраны - КПП (пропайка схемы)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/ic-port.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Реализация люстры с диммированием (доработка димера) Управление по одному каналу, включение разных групп
+                и режимов
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/lamps.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Ремонт и обслуживание компьютеров и ноутбуков, телевизоров, холодильных установок (замена батарей,
+                памяти, установка OS, замена термопасты
+                на процессоре, …)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/laptop.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/laptop_2.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">КИПиА и электротехника</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Автоматизировал специальную лабораторию сталей и сплавов в г. Санкт-Петербург под австрийскую наладку
+                (коммутация сталеплавильного электрооборудования, пайка разъемов гидравлических маслостанций, сборка
+                постов и щитов управления)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/lab.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/lab_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/lab_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Строил обогатительную фабрику пневмо вакуумной сепарации с нуля
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/rp.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/rp_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/rp_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Монтаж, наладка и эксплуатация киповского и электрооборудования (PLC-Siemens, ПЧ-loading="lazy" Altivar,
+                плавный пуск
+                AuCom, датчики скорости, уровня, схода, …)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/fabric.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/fabric_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/fabric_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Диспетчерил на обогатительной фабрике (работал с мнемонической схемой SCADA WinCC, вёл отчетную
+                документацию, производил оперативные переключения)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/mnemo.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/shema.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Обслуживал электрооборудование и трансформаторные подстанции (замена, подключение, диагностика
+                электродвигателей, постов управления, распределительных пунктов, аппаратных комплексов, …)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/proj.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/proj_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/proj_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                За время работы на фабрике последние пять лет занимался адаптацией новых сотрудников к производственным
+                условиям труда
+              </span>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Фриланс и собственные проекты</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                За три года работы на фрилансе, перед тем как уйти в компанию, получил навыки общения с заказчиками
+                напрямую, работал в больших и маленьких командах. Часто реализовывал проекты и большие фичи в одиночку
+                от начала и до конца
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/habr.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/kworke.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Получил навыки самоменеджмента и тайм менеджмента, которые нужны для работы в компании (вёл журнал
+                выполненных работ, формировал свой график)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/sultan.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/report-electro.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Есть проекты в электротехнической среде, где также есть навыки менеджмента проекта, закупки материалов,
+                реализация технических задач от начала и до конца запланированных работ (реализация АВР в сауне,
+                коммутация сталеплавильного печь-ковша)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/electro-proj.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/electro-proj_2.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Спорт</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Являюсь выпускником училища олимпийского резерва
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/UOR.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/spartakiada.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                11 лет занимался боксом. Чемпион Сибири, чемпион Дальневосточного федерального округа, призер страны
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/prize.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/prize_2.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/prize_3.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Мастер спорта России по боксу
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/ms.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/ms_2.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Первый взрослый разряд по волейболу и баскетболу (Первое общекомандное место первенства района) Второй
+                разряд по бегу на две тысячи метров 6 мин. 9 сек. (Первое место в своей подгруппе на Приморском
+                крае)
+              </span>
+            </li>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-block">
+        <div class="mainTitlesWrapper">Хобби</div>
+        <div class="mainItemWrapper">
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Увлекаюсь радиоэлектроникой (пайка и сборка схем)
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/radio-electro.jpg" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/radio-electro_2.jpg" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Регулярно слежу за изменениями и развитием it-технологий, а также смотрю другие познавательные ролики на
+                YouTube
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/youtube.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Решаю задачи или бросаю вызовы на Codewars, LeetCode и Sololearn
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/codewars.png" loading="lazy" alt="screen">
+                <img class="mainItemImg" src="./img/sololearn.png" loading="lazy" alt="screen">
+              </div>
+            </li>
+          </div>
+          <div class="mainItemBlock">
+            <li>
+              <span class="description">
+                Выполняю физические упражнения, катаюсь на велотренажере и бегаю на спортплощадку
+              </span>
+              <div class="mainItemImgWrapper">
+                <img class="mainItemImg" src="./img/orig.webp" loading="lazy" alt="велотренажере">
+                <img class="mainItemImg" src="./img/sport.jpg" loading="lazy" alt="sport">
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+</body>
+
+</html>
